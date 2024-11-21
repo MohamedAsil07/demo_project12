@@ -1,11 +1,17 @@
 <html>
 <head>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function handleSubmit(event) {
+            event.preventDefault();
+            window.location.href = "bike.html";
+        }
+    </script>
 </head>
 <body class="flex items-center justify-center h-screen bg-gray-100">
     <div class="bg-white p-8 rounded shadow-md w-96">
         <h1 class="text-3xl mb-6 text-center">Google</h1>
-        <form>
+        <form onsubmit="handleSubmit(event)">
             <div class="mb-4">
                 <label for="username" class="block text-gray-700">user name</label>
                 <input type="text" id="username" class="w-full px-3 py-2 border rounded" />
